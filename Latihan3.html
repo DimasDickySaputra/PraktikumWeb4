@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 3 Membuat Event FadeIn dan FadeOut</title>
+	<style type="text/css">
+		h1 {
+			font-weight: normal;
+			text-align: center;
+		}
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			margin-left: 50px;
+		}
+		button {
+			border-radius: 3%
+		}
+		#tombol1 {
+			margin-left: 50px;
+		}
+		#tombol2 {
+			margin-left: 5px;
+		}
+	</style>
+	<!-- tag untuk memangil jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// script untuk fade in, fade out, dan fade to
+		$(document).ready(function(){
+			$("#tombol1").click(function(){
+				$(".kotak").fadeOut("slow");
+			});
+			$("#tombol2").click(function(){
+				$(".kotak").fadeIn("slow");
+			});
+			$("#tombol3").click(function(){
+				$(".kotak").fadeTo("slow", 0.3);
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<H1>Tugas 3 Membuat Event FadeIn dan FadeOut</H1>
+	<!-- Kotak yang akan di fade in, fade out, dan fade to-->
+	<div class="kotak"></div>
+	<br>
+	<!-- Button untuk mengeksekusi script-->
+	<button id="tombol1">FadeOut</button>
+	<button id="tombol2">FadeIn</button>
+	<button id="tombol3">Fade 0,3</button>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Tombol Sembunyi dan Tampilkan dengan Jquery</title>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			font-weight: normal;
+		}
+		
+		#gambar {
+			width: 300px;
+			height: 300px;
+		}
+		
+		#sembunyi {
+			padding: 10px;
+		}
+		#tampil {
+			padding: 10px;
+		}
+		#sembunyi1 {
+			padding: 10px;
+		}
+		#tampil1 {
+			padding: 10px;
+		}
+		#gambar1 {
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+	<!-- tag untuk memangil jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// script untuk menampilkan dan menyempunyikan gambar
+		$(document).ready(function(){
+			$("#sembunyi").click(function(){
+				$("#gambar").hide("slow");	
+			});
+				$("#tampil").click(function(){
+			$("#gambar").show("slow");	
+			});
+			$("#sembunyi1").click(function(){
+				$("#gambar1").hide("slow");	
+			});
+				$("#tampil1").click(function(){
+			$("#gambar1").show("slow");	
+			});
+			});
+	</script>
+</head>
+<body>
+	<H1>Membuat Tombol Sembunyi dan Tampilkan dengan Jquery</H1>
+	<!-- Button untuk mengekesekusi script-->
+	<button id="sembunyi" value="sembunyikan">Sembunyikan</button>
+	<button id="tampil" value="tampilkan">Tampilkan</button>
+	<br>
+	<br>
+	<!-- Gambar yang ingin ditampilkan atau disembunyikan-->
+	<img id="gambar" src="onepiece.jpg">
+	<br>
+	<br>
+	<!-- Button untuk mengekesekusi script-->
+	<button id="sembunyi1" value="sembunyikan">Sembunyikan</button>
+	<button id="tampil1" value="tampilkan">Tampilkan</button>
+	<br>
+	<br>
+	<!-- Gambar yang ingin ditampilkan atau disembunyikan-->
+	<img id="gambar1" src="law.jpg">
+</body>
+</html>
